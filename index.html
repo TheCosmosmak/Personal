@@ -45,9 +45,12 @@
         <div id="nav-links" class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent shadow-lg md:shadow-none p-4 md:p-0 space-y-4 md:space-y-0 md:space-x-6 text-gray-300 font-semibold">
             <a href="#about" class="hover:text-purple-400 transition-colors nav-link">About</a>
             <a href="#cosmos-ai" class="hover:text-purple-400 transition-colors nav-link">The Cosmos</a>
+            <a href="#market-pulse" class="hover:text-purple-400 transition-colors nav-link">Market Pulse</a>
             <a href="#mindset" class="hover:text-purple-400 transition-colors nav-link">Mindset</a>
+            <a href="#quotes" class="hover:text-purple-400 transition-colors nav-link">Words I Live By</a>
             <a href="#rubiks" class="hover:text-purple-400 transition-colors nav-link">Cube</a>
             <a href="#skills" class="hover:text-purple-400 transition-colors nav-link">Skills</a>
+            <a href="#journey" class="hover:text-purple-400 transition-colors nav-link">Journey</a>
             <a href="#cinema" class="hover:text-purple-400 transition-colors nav-link">Cinema</a>
         </div>
         <div class="md:hidden">
@@ -91,9 +94,24 @@
             </div>
         </div>
     </section>
+
+    <!-- Market Pulse AI Section -->
+    <section id="market-pulse" class="py-20 px-6 md:px-20 bg-gray-800" data-aos="fade-up">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold gradient-text">Market Pulse</h2>
+            <p class="mt-4 text-lg text-gray-400">Enter a stock ticker to get a professional, AI-powered analysis.</p>
+            <div class="mt-8 glass-effect p-6 rounded-lg shadow-2xl">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="text" id="stock-ticker-prompt" placeholder="e.g., 'AAPL', 'TSLA', 'GOOGL'" class="w-full p-4 rounded-lg bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-shadow border border-gray-700 uppercase">
+                    <button id="get-analysis-btn" class="px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg font-bold text-lg hover:from-indigo-600 hover:to-purple-600 transition-all transform hover:scale-105 whitespace-nowrap">✨ Get Analysis</button>
+                </div>
+                <div id="stock-analysis-result" class="mt-6 text-left"></div>
+            </div>
+        </div>
+    </section>
     
     <!-- A Powerful Message Section -->
-    <section id="mindset" class="py-20 px-6 md:px-20 bg-gray-800" data-aos="fade-up">
+    <section id="mindset" class="py-20 px-6 md:px-20 bg-gray-900" data-aos="fade-up">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-4 gradient-text">A Shift in Perspective</h2>
             <p class="text-lg text-gray-400 mb-10">This video contains a message I find incredibly powerful. It's worth your time.</p>
@@ -103,12 +121,23 @@
         </div>
     </section>
 
+    <!-- Words I Live By -->
+    <section id="quotes" class="py-20 px-6 md:px-20 bg-gray-800" data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-center mb-12 text-purple-300">Words I Live By</h2>
+        <div class="max-w-3xl mx-auto space-y-6 text-lg italic text-center text-gray-300">
+            <p data-aos="fade-left">"Stay hungry, stay foolish." – Steve Jobs</p>
+            <p data-aos="fade-right">"Your time is limited, so don’t waste it living someone else’s life." – Steve Jobs</p>
+            <p data-aos="fade-left">"Not all those who wander are lost." – J.R.R. Tolkien</p>
+            <p data-aos="fade-right">"In the middle of every difficulty lies opportunity." – Albert Einstein</p>
+        </div>
+    </section>
+
     <!-- Rubik's Cube Section -->
     <section id="rubiks" class="py-20 px-6 md:px-20 bg-gray-900" data-aos="fade-up">
         <div class="max-w-5xl mx-auto text-center">
             <h2 class="text-4xl font-bold mb-4 gradient-text">The Cube Challenge</h2>
             <p class="text-lg text-gray-400 mb-8">A puzzle of logic and patience. Drag on a face to turn it, or drag the background to rotate the whole cube.</p>
-            <div class="w-full h-96 md:h-[500px] bg-gray-800 rounded-lg shadow-2xl relative" id="rubiks-container">
+            <div class="w-full h-96 md:h-[500px] bg-gray-700/20 rounded-lg shadow-2xl relative" id="rubiks-container">
                 <canvas id="rubiks-canvas"></canvas>
             </div>
             <div class="mt-8 flex justify-center gap-4">
@@ -144,14 +173,18 @@
         </div>
     </section>
 
-    <!-- Words I Live By -->
-    <section id="quotes" class="py-20 px-6 md:px-20 bg-gray-900" data-aos="fade-up">
-        <h2 class="text-4xl font-bold text-center mb-12 text-purple-300">Words I Live By</h2>
-        <div class="max-w-3xl mx-auto space-y-6 text-lg italic text-center text-gray-300">
-            <p data-aos="fade-left">"Stay hungry, stay foolish." – Steve Jobs</p>
-            <p data-aos="fade-right">"Not all those who wander are lost." – J.R.R. Tolkien</p>
-            <p data-aos="fade-left">"In the middle of every difficulty lies opportunity." – Albert Einstein</p>
-            <p data-aos="fade-right">"Your time is limited, so don’t waste it living someone else’s life." – Steve Jobs</p>
+    <!-- My Journey Ahead Section -->
+    <section id="journey" class="py-20 px-6 md:px-20 bg-gray-900" data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-center mb-12 gradient-text">My Journey Ahead</h2>
+        <div class="max-w-2xl mx-auto text-center">
+            <ul class="text-xl text-gray-300 space-y-4">
+                <li data-aos="fade-left">🏔 Hike the Himalayas</li>
+                <li data-aos="fade-right">🏝 Explore Bora Bora</li>
+                <li data-aos="fade-left">🌇 Watch a sunset in Santorini</li>
+                <li data-aos="fade-right">🏜 Traverse the Sahara Desert</li>
+                <li data-aos="fade-left">🌉 Cross the Golden Gate Bridge</li>
+                <li data-aos="fade-right">🚐 Explore the U.S. in a caravan for a month</li>
+            </ul>
         </div>
     </section>
 
@@ -218,7 +251,11 @@
                         body: JSON.stringify(payload)
                     });
                     if (!response.ok) throw new Error(`API request failed with status ${response.status}`);
-                    return await response.json();
+                    const result = await response.json();
+                     if (!result.candidates || !result.candidates[0].content || !result.candidates[0].content.parts[0].text) {
+                        throw new Error("Invalid API response structure");
+                    }
+                    return result;
                 } catch (error) {
                     console.error(`Attempt ${attempt + 1} failed:`, error);
                     attempt++;
@@ -231,14 +268,14 @@
 
         // --- MODAL & CINEMA SECTION ---
         const movies = [
-            { title: 'The Shawshank Redemption', poster: 'https://m.media-amazon.com/images/I/51z9n2m3-8L._AC_.jpg' },
-            { title: 'Forrest Gump', poster: 'https://m.media-amazon.com/images/I/61xQy5tBJBL._AC_UF894,1000_QL80_.jpg' },
-            { title: 'The Pursuit of Happyness', poster: 'https://m.media-amazon.com/images/I/81C+2e2eN+L._AC_UF894,1000_QL80_.jpg' },
-            { title: 'Fight Club', poster: 'https://m.media-amazon.com/images/I/81D+KJkO4SL.jpg' },
-            { title: 'The Green Mile', poster: 'https://m.media-amazon.com/images/I/711+6yS7lqL._AC_UF894,1000_QL80_.jpg' },
-            { title: 'Pulp Fiction', poster: 'https://m.media-amazon.com/images/I/71c0-j0-9fL._AC_UF894,1000_QL80_.jpg' },
-            { title: 'City of God', poster: 'https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTViXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg' },
-            { title: 'Se7en', poster: 'https://m.media-amazon.com/images/I/81nJm3c4V2L._AC_UF894,1000_QL80_.jpg' }
+            { title: 'The Shawshank Redemption', poster: 'https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'Forrest Gump', poster: 'https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'The Pursuit of Happyness', poster: 'https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'Fight Club', poster: 'https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'The Green Mile', poster: 'https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_FMjpg_UX1000_.jpg' },
+            { title: 'Pulp Fiction', poster: 'https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'City of God', poster: 'https://m.media-amazon.com/images/M/MV5BMGU5OWEwZDItNmNkMC00NzZmLTk1YTctNzVhZTJjM2NlZTViXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg' },
+            { title: 'Se7en', poster: 'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg' }
         ];
         const cinemaContainer = document.querySelector('#cinema .grid');
         const modal = document.getElementById('ai-modal');
@@ -298,13 +335,16 @@
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(50, rubiksContainer.clientWidth / rubiksContainer.clientHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
-        
         renderer.setSize(rubiksContainer.clientWidth, rubiksContainer.clientHeight);
-        camera.position.set(0, 0, 7);
-        scene.add(new THREE.AmbientLight(0xffffff, 0.8));
-        const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
-        dirLight.position.set(5, 10, 7.5);
-        scene.add(dirLight);
+        camera.position.set(0, 0, 8);
+        
+        scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 0.6);
+        dirLight1.position.set(5, 10, 7.5);
+        scene.add(dirLight1);
+        const dirLight2 = new THREE.DirectionalLight(0x8899ff, 0.4);
+        dirLight2.position.set(-5, -10, -7.5);
+        scene.add(dirLight2);
 
         const cubeGroup = new THREE.Group();
         const cubies = [];
@@ -312,7 +352,7 @@
         const spacing = 0.05;
 
         const colors = { right: 0x0046ad, left: 0x009b48, up: 0xffffff, down: 0xffd500, front: 0xb71234, back: 0xff5800 };
-        const black = 0x1a1a1a;
+        const black = 0x222222;
 
         function createCube() {
             cubeGroup.clear();
@@ -323,12 +363,12 @@
                     for (let z = 0; z < 3; z++) {
                         if (x === 1 && y === 1 && z === 1) continue;
                         const materials = [
-                            new THREE.MeshLambertMaterial({ color: (x === 2) ? colors.right : black }),
-                            new THREE.MeshLambertMaterial({ color: (x === 0) ? colors.left : black }),
-                            new THREE.MeshLambertMaterial({ color: (y === 2) ? colors.up : black }),
-                            new THREE.MeshLambertMaterial({ color: (y === 0) ? colors.down : black }),
-                            new THREE.MeshLambertMaterial({ color: (z === 2) ? colors.front : black }),
-                            new THREE.MeshLambertMaterial({ color: (z === 0) ? colors.back : black })
+                            new THREE.MeshStandardMaterial({ color: (x === 2) ? colors.right : black, roughness: 0.3, metalness: 0.1 }),
+                            new THREE.MeshStandardMaterial({ color: (x === 0) ? colors.left : black, roughness: 0.3, metalness: 0.1 }),
+                            new THREE.MeshStandardMaterial({ color: (y === 2) ? colors.up : black, roughness: 0.3, metalness: 0.1 }),
+                            new THREE.MeshStandardMaterial({ color: (y === 0) ? colors.down : black, roughness: 0.3, metalness: 0.1 }),
+                            new THREE.MeshStandardMaterial({ color: (z === 2) ? colors.front : black, roughness: 0.3, metalness: 0.1 }),
+                            new THREE.MeshStandardMaterial({ color: (z === 0) ? colors.back : black, roughness: 0.3, metalness: 0.1 })
                         ];
                         const geometry = new THREE.BoxGeometry(cubieSize, cubieSize, cubieSize);
                         const cubie = new THREE.Mesh(geometry, materials);
@@ -346,27 +386,30 @@
             scene.add(cubeGroup);
         }
         createCube();
-
         const raycaster = new THREE.Raycaster();
         const mouse = new THREE.Vector2();
         let isDragging = false, isAnimating = false;
-        let intersected, dragStart, pivot;
-
+        let intersected, dragStart;
+        
         function onPointerDown(event) {
             if (isAnimating) return;
             isDragging = true;
             canvas.classList.add('grabbing');
+            
             const rect = renderer.domElement.getBoundingClientRect();
-            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
-            dragStart = { x: event.clientX, y: event.clientY };
+            const x = event.touches ? event.touches[0].clientX : event.clientX;
+            const y = event.touches ? event.touches[0].clientY : event.clientY;
 
+            mouse.x = ((x - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((y - rect.top) / rect.height) * 2 + 1;
+            dragStart = { x: x, y: y };
+            
             raycaster.setFromCamera(mouse, camera);
             const intersects = raycaster.intersectObjects(cubies);
             if (intersects.length > 0) {
                 intersected = {
                     object: intersects[0].object,
-                    face: intersects[0].face.normal.clone().applyQuaternion(intersects[0].object.quaternion).round()
+                    faceNormal: intersects[0].face.normal.clone()
                 };
             } else {
                 intersected = null;
@@ -375,41 +418,46 @@
 
         function onPointerMove(event) {
             if (!isDragging || isAnimating) return;
-            const dragEnd = { x: event.clientX, y: event.clientY };
-            const delta = { x: dragEnd.x - dragStart.x, y: dragEnd.y - dragStart.y };
+            
+            const x = event.touches ? event.touches[0].clientX : event.clientX;
+            const y = event.touches ? event.touches[0].clientY : event.clientY;
 
+            const dragEnd = { x: x, y: y };
+            const delta = { x: dragEnd.x - dragStart.x, y: dragEnd.y - dragStart.y };
+            
             if (intersected) {
-                const normal = intersected.face;
+                const dragThreshold = 15;
+                if (Math.hypot(delta.x, delta.y) < dragThreshold) return;
+
+                const worldQuaternion = new THREE.Quaternion();
+                intersected.object.getWorldQuaternion(worldQuaternion);
+                const worldNormal = intersected.faceNormal.clone().applyQuaternion(worldQuaternion).round();
+
                 let axis;
-                if (Math.abs(delta.x) > Math.abs(delta.y)) {
-                    axis = new THREE.Vector3(0, 1, 0); 
-                    if (Math.abs(normal.x) > 0.5) axis.set(0, 0, 1);
-                } else {
-                    axis = new THREE.Vector3(1, 0, 0); 
-                    if (Math.abs(normal.y) > 0.5) axis.set(0, 0, 1);
+                let angleDirection;
+                const isHorizontal = Math.abs(delta.x) > Math.abs(delta.y);
+
+                if (Math.abs(worldNormal.y) > 0.5) { // Top or bottom face
+                    axis = isHorizontal ? new THREE.Vector3(0, 0, 1) : new THREE.Vector3(1, 0, 0);
+                    angleDirection = isHorizontal ? -Math.sign(delta.x) * Math.sign(worldNormal.y) : -Math.sign(delta.y);
+                } else { // Side faces
+                    axis = isHorizontal ? new THREE.Vector3(0, 1, 0) : new THREE.Vector3(1, 0, 0);
+                    if (Math.abs(worldNormal.z) > 0.5) { // Front/Back
+                        angleDirection = isHorizontal ? Math.sign(delta.x) * Math.sign(worldNormal.z) : -Math.sign(delta.y);
+                    } else { // Left/Right
+                        angleDirection = isHorizontal ? Math.sign(delta.x) : Math.sign(delta.y) * Math.sign(worldNormal.x);
+                    }
                 }
                 
-                const cameraDirection = new THREE.Vector3();
-                camera.getWorldDirection(cameraDirection);
-                if (axis.dot(cameraDirection) < 0) {
-                     if (Math.abs(delta.x) > Math.abs(delta.y)) {
-                        if (Math.sign(delta.x) === Math.sign(normal.z) || (Math.sign(normal.x) !== 0 && Math.sign(delta.x * normal.x) === 1) ) {
-                            axis.negate();
-                        }
-                     } else {
-                        if(Math.sign(delta.y * -1) !== Math.sign(normal.z) && Math.abs(normal.z) > 0.5) axis.negate();
-                        if(Math.sign(delta.y * -1) !== Math.sign(normal.x) && Math.abs(normal.x) > 0.5) axis.negate();
-                     }
-                }
-                
-                const direction = (Math.abs(delta.x) > Math.abs(delta.y) ? delta.x : -delta.y) > 0 ? 1 : -1;
-                rotateFace(intersected.object, axis, direction * Math.PI / 2);
-                isDragging = false;
+                rotateFace(intersected.object, axis, angleDirection * Math.PI / 2);
+                isDragging = false; 
+                intersected = null; 
+
             } else {
-                cubeGroup.rotation.y += delta.x * 0.01;
-                cubeGroup.rotation.x += delta.y * 0.01;
-                dragStart = dragEnd;
+                cubeGroup.rotation.y += delta.x * 0.007;
+                cubeGroup.rotation.x += delta.y * 0.007;
             }
+            dragStart = dragEnd; 
         }
 
         function onPointerUp() {
@@ -421,23 +469,25 @@
             if (isAnimating) return;
             isAnimating = true;
             toggleButtons(false);
-
-            pivot = new THREE.Group();
+            const pivot = new THREE.Group();
             scene.add(pivot);
-            pivot.rotation.set(0,0,0);
             
             const cubiesToRotate = [];
+            const pivotPosition = new THREE.Vector3().setFromMatrixPosition(pivotCubie.matrixWorld);
+            
             cubies.forEach(cubie => {
                 const position = new THREE.Vector3().setFromMatrixPosition(cubie.matrixWorld);
-                if (Math.abs(position.dot(axis) - pivotCubie.position.dot(axis)) < 0.1) {
+                if (Math.abs(position.dot(axis) - pivotPosition.dot(axis)) < 0.1) {
                     cubiesToRotate.push(cubie);
                 }
             });
-
             cubiesToRotate.forEach(cubie => pivot.attach(cubie));
-
             new TWEEN.Tween(pivot.rotation)
-                .to({ x: pivot.rotation.x + axis.x * angle, y: pivot.rotation.y + axis.y * angle, z: pivot.rotation.z + axis.z * angle }, 300)
+                .to({ 
+                    x: pivot.rotation.x + axis.x * angle, 
+                    y: pivot.rotation.y + axis.y * angle, 
+                    z: pivot.rotation.z + axis.z * angle 
+                }, 300)
                 .easing(TWEEN.Easing.Quadratic.Out)
                 .onComplete(() => {
                     pivot.updateMatrixWorld();
@@ -451,22 +501,19 @@
                 })
                 .start();
         }
-        
         function toggleButtons(enabled) {
             document.getElementById('scramble-btn').disabled = !enabled;
             document.getElementById('reset-btn').disabled = !enabled;
         }
-        
         document.getElementById('reset-btn').addEventListener('click', () => {
              if (isAnimating) return;
              cubeGroup.rotation.set(0,0,0);
              scene.remove(cubeGroup);
              createCube();
         });
-
         document.getElementById('scramble-btn').addEventListener('click', async () => {
             if (isAnimating) return;
-            const moves = 20;
+            const moves = 25;
             const axes = [new THREE.Vector3(1,0,0), new THREE.Vector3(0,1,0), new THREE.Vector3(0,0,1)];
             for(let i=0; i<moves; i++) {
                 const cubie = cubies[Math.floor(Math.random() * cubies.length)];
@@ -476,18 +523,23 @@
                 await new Promise(resolve => setTimeout(resolve, 350));
             }
         });
-
         canvas.addEventListener('pointerdown', onPointerDown);
         window.addEventListener('pointermove', onPointerMove);
         window.addEventListener('pointerup', onPointerUp);
-        
+        canvas.addEventListener('touchstart', onPointerDown, { passive: false });
+        window.addEventListener('touchmove', onPointerMove, { passive: false });
+        window.addEventListener('touchend', onPointerUp);
+
         function animate(time) {
             requestAnimationFrame(animate);
             TWEEN.update(time);
+            if (!isDragging && !isAnimating) {
+                 cubeGroup.rotation.y += 0.002;
+                 cubeGroup.rotation.x += 0.001;
+            }
             renderer.render(scene, camera);
         }
         animate();
-        
         window.addEventListener('resize', () => {
             camera.aspect = rubiksContainer.clientWidth / rubiksContainer.clientHeight;
             camera.updateProjectionMatrix();
@@ -509,7 +561,7 @@
             askCosmosBtn.innerHTML = '<div class="loader mx-auto h-5 w-5"></div>';
             cosmosResultContainer.innerHTML = '';
             
-            const prompt = `You are 'The Cosmos', a sophisticated AI assistant like Jarvis from Iron Man. Your tone is intelligent, helpful, and slightly witty. A user wants an idea based on their input. Provide a unique and creative response that matches their request. The response must be in the JSON format specified in the schema. User's request: "${promptText}"`;
+            const prompt = `You are 'The Cosmos', a sophisticated AI assistant like Jarvis from Iron Man. Your tone is intelligent, helpful, and slightly witty. A user wants an idea based on their input. Provide a unique and creative response that matches their request. The response MUST be a single, valid JSON object that strictly adheres to the provided schema. Do not include any text, markdown, or formatting outside of the JSON object itself. User's request: "${promptText}"`;
             const payload = {
                 contents: [{ role: "user", parts: [{ text: prompt }] }],
                 generationConfig: {
@@ -525,25 +577,54 @@
             };
             try {
                 const result = await callGemini(payload);
-                // Extract the text which should be a JSON string
                 const jsonText = result.candidates[0].content.parts[0].text;
-                let data;
-                // Try to parse the JSON string
-                try {
-                    data = JSON.parse(jsonText);
-                } catch (parseError) {
-                    console.error("JSON Parsing Error:", parseError);
-                    throw new Error("The AI's response was not in the expected format.");
-                }
-
+                const data = JSON.parse(jsonText);
                 let itineraryHtml = data.itinerary.map(item => `<div class="mt-2"><p class="font-bold text-purple-400">${item.day}:</p><p>${item.activity}</p></div>`).join('');
-                cosmosResultContainer.innerHTML = `<div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700"><h4 class="text-2xl font-bold gradient-text">${data.location}, ${data.country}</h4><p class="mt-2 text-gray-300">${data.description}</p><div class="mt-4">${itineraryHtml}</div></div>`;
+                cosmosResultContainer.innerHTML = `<div class="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700"><h4 class="text-2xl font-bold gradient-text">${data.location}, ${data.country}</h4><p class="mt-2 text-gray-300">${data.description}</p><div class="mt-4">${itineraryHtml}</div></div>`;
             } catch (error) {
                 console.error("Cosmos AI Error:", error);
                 cosmosResultContainer.innerHTML = `<p class="text-red-400">Apologies, sir. There seems to be some cosmic interference. Please try again shortly.</p>`;
             } finally {
                 askCosmosBtn.disabled = false;
                 askCosmosBtn.innerHTML = '✨ Ask The Cosmos';
+            }
+        });
+        
+        // --- MARKET PULSE AI SECTION ---
+        const stockTickerInput = document.getElementById('stock-ticker-prompt');
+        const getAnalysisBtn = document.getElementById('get-analysis-btn');
+        const stockAnalysisResultContainer = document.getElementById('stock-analysis-result');
+
+        getAnalysisBtn.addEventListener('click', async () => {
+            const ticker = stockTickerInput.value.trim().toUpperCase();
+            if (!ticker) {
+                stockAnalysisResultContainer.innerHTML = `<p class="text-red-400">A stock ticker is required for analysis.</p>`;
+                return;
+            }
+
+            getAnalysisBtn.disabled = true;
+            getAnalysisBtn.innerHTML = '<div class="loader mx-auto h-5 w-5"></div>';
+            stockAnalysisResultContainer.innerHTML = '';
+
+            const prompt = `You are 'Market Pulse', a professional financial analyst AI. Provide a detailed yet concise analysis for the stock ticker "${ticker}". Your analysis should be structured for a knowledgeable investor. Include the following sections:
+1.  **Company Overview:** Briefly describe the company and its business.
+2.  **Recent Performance:** Summarize recent stock performance and key news.
+3.  **Key Financial Metrics:** Highlight important metrics (e.g., P/E Ratio, EPS, Revenue Growth).
+4.  **Analyst Consensus & Outlook:** Provide a summary of the general analyst sentiment (e.g., Buy, Hold, Sell) and a brief future outlook, mentioning potential catalysts and risks.
+The response should be formatted as clean HTML using Tailwind CSS classes for styling. Use headings (e.g., <h4 class="font-bold text-lg text-purple-400 mt-4">) for each section. Do not include <html> or <body> tags.`;
+
+            const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }] };
+
+            try {
+                const result = await callGemini(payload);
+                const text = result.candidates[0].content.parts[0].text;
+                stockAnalysisResultContainer.innerHTML = `<div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">${text}</div>`;
+            } catch (error) {
+                console.error("Market Pulse AI Error:", error);
+                stockAnalysisResultContainer.innerHTML = `<p class="text-red-400">Could not retrieve analysis for ${ticker}. The ticker might be invalid or there was a network issue.</p>`;
+            } finally {
+                getAnalysisBtn.disabled = false;
+                getAnalysisBtn.innerHTML = '✨ Get Analysis';
             }
         });
 
